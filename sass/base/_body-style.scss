@@ -1,0 +1,37 @@
+body {
+  color: $basic-color;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: $main-font-weight;
+  letter-spacing: $main-letter-spacing;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  min-width: 1230px;
+  padding-top: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.button {
+  display: inline-block;
+  cursor: pointer;
+}

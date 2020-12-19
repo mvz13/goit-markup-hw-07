@@ -1,0 +1,43 @@
+.doin {
+  display: flex;
+  padding-bottom: 94px;
+}
+.doin-cards {
+  width: 370px;
+  position: relative;
+}
+.doin-cards:not(:last-child) {
+  margin-right: 30px;
+}
+.doin-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  letter-spacing: 0.03em;
+  color: $basic-color;
+}
+.doin-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.doin-title {
+  position: absolute;
+  bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  color: $white-color;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}

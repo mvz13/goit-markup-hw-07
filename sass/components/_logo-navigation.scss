@@ -1,0 +1,100 @@
+/*logo*/
+.logo {
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  display: block;
+}
+.all-logo {
+  width: 153px;
+  margin-right: 85px;
+  margin-left: 0;
+}
+.logo-part {
+  color: $main-color;
+}
+/*Navigation*/
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+.site-nav {
+  width: 294px;
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $basic-color;
+  text-decoration: none;
+  transition: color 250ms $main-bezier;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: $accent-color;
+}
+.current-page {
+  position: relative;
+}
+.current-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: $accent-color;
+  border-radius: 2px;
+  opacity: 0;
+  transition: color 250ms $main-bezier;
+}
+.current-page:active::after {
+  opacity: 1;
+}
+.contact {
+  display: flex;
+  height: 16px;
+  margin-left: auto;
+}
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $paragr-gris-color;
+  transition: color 250ms $main-bezier;
+}
+.nav-contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-link:not(:last-child) {
+  margin-right: 50px;
+}
+.link:hover,
+.link:focus {
+  color: $accent-color;
+}

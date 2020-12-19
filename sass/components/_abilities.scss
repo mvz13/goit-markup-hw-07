@@ -1,0 +1,42 @@
+.abilities-container {
+  position: relative;
+}
+.abilities-container::before {
+  position: absolute;
+  bottom: -94px;
+  left: 0;
+  content: "";
+  width: 100%;
+}
+.abilities {
+  display: flex;
+}
+.abilities-items {
+  width: 270px;
+}
+.abilities-items:not(:last-child) {
+  margin-right: 30px;
+}
+.abilities-svg {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+.abilities-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: $basic-color;
+  text-transform: uppercase;
+}
+.abilities-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: $paragr-gris-color;
+}
