@@ -28,9 +28,9 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   overflow: hidden;
-}
-.our-team-cards:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .our-team-photo {
   display: block;
@@ -72,15 +72,15 @@
   justify-content: center;
   color: #afb1b8;
   transition: color 250ms $main-bezier, background-color 250ms $main-bezier;
-}
+ &:hover,
+ &:focus {
+  background-color: $accent-color;
+  color: $white-color;
+}}
 .contact-team-item:not(:last-child) {
   margin-right: 10px;
 }
 .contact-team-svg {
   fill: currentColor;
 }
-.contact-team-button:hover,
-.contact-team-button:focus {
-  background-color: $accent-color;
-  color: $white-color;
-}
+

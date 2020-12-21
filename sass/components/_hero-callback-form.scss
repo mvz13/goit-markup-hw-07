@@ -12,21 +12,19 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: transform 250ms $main-bezier;
-}
-.callback-header {
+ &-header {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
   color: $basic-color;
-}
+}}
 .cont-form {
   margin-bottom: 20px;
-}
-.cont-form-item:not(:last-child) {
+ &-item:not(:last-child) {
   margin-bottom: 28px;
-}
+}}
 .form-field {
   position: relative;
   display: block;
@@ -42,7 +40,10 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms $main-bezier;
-}
+ &:focus {
+  border: 1px solid $accent-color;
+  outline: none;
+}}
 .field-name {
   position: absolute;
   top: 50%;
@@ -63,10 +64,7 @@
   fill: currentColor;
   transition: color 250ms $main-bezier;
 }
-.input:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
+
 .input:focus + .field-name {
   transform: translate(-26px, -40px);
   color: $accent-color;
@@ -88,7 +86,10 @@
   border-radius: 4px;
   transition: border 250ms $main-bezier;
   resize: none;
-}
+ &:focus {
+  border: 1px solid $accent-color;
+  outline: none;
+}}
 .comment-name {
   position: absolute;
   top: 12px;
@@ -99,10 +100,7 @@
   color: $paragr-gris-color;
   transition: color 250ms $main-bezier, transform 250ms $main-bezier;
 }
-.comment-input:focus {
-  border: 1px solid $accent-color;
-  outline: none;
-}
+
 .comment-input:focus + .comment-name {
   transform: translateY(-32px);
   color: $accent-color;

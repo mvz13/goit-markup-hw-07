@@ -37,40 +37,39 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.nav-item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .nav-link {
   display: block;
-
   padding-top: 32px;
   padding-bottom: 32px;
   color: $basic-color;
   text-decoration: none;
   transition: color 250ms $main-bezier;
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .current-page {
   position: relative;
-}
-.current-page::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background-color: $accent-color;
-  border-radius: 2px;
-  opacity: 0;
-  transition: color 250ms $main-bezier;
-}
-.current-page:active::after {
-  opacity: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 0;
+    transition: color 250ms $main-bezier;
+  }
+  &:active::after {
+    opacity: 1;
+  }
 }
 .contact {
   display: flex;
@@ -86,6 +85,10 @@
   letter-spacing: 0.02em;
   color: $paragr-gris-color;
   transition: color 250ms $main-bezier;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .nav-contacts-icon {
   margin-right: 10px;
@@ -93,8 +96,4 @@
 }
 .contact-link:not(:last-child) {
   margin-right: 50px;
-}
-.link:hover,
-.link:focus {
-  color: $accent-color;
 }

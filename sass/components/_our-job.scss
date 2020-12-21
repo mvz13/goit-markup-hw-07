@@ -5,10 +5,9 @@
 .doin-cards {
   width: 370px;
   position: relative;
-}
-.doin-cards:not(:last-child) {
+ &:not(:last-child) {
   margin-right: 30px;
-}
+}}
 .doin-name {
   font-weight: 700;
   font-size: 36px;

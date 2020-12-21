@@ -44,10 +44,10 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: background-color 250ms $main-bezier;
-}
-.st-adress-link:hover,
-.st-adress-link:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 .connect-us {
   width: 206px;
@@ -80,13 +80,13 @@
   color: $white-color;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms $main-bezier;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 .connect-icon {
   fill: currentColor;
-}
-.contact-connect:hover,
-.contact-connect:focus {
-  background-color: $accent-color;
 }
 .footer-subscription {
   margin-left: auto;
@@ -129,10 +129,10 @@
   background-color: $accent-color;
   border: 1px solid transparent;
   border-radius: 4px;
-}
-.subscr-button:hover,
-.subscr-button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 .subscr-icon {
   margin-left: 10px;

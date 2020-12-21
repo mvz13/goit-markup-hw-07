@@ -24,15 +24,15 @@
   justify-content: center;
   color: #afb1b8;
   transition: color 250ms $main-bezier, border-color 250ms $main-bezier;
-}
+ &:hover,
+ &:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}}
 .client-icon {
   fill: currentColor;
 }
 .client:not(:last-child) {
   margin-right: 30px;
 }
-.client-link:hover,
-.client-link:focus {
-  color: $accent-color;
-  border-color: $accent-color;
-}
+
